@@ -6,6 +6,14 @@ body{
 	
 }
 
+#particles-js{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
 .container-fluid{
 	background-color: rgba(0, 0, 0, 0.4);
 	
@@ -24,6 +32,89 @@ body{
 	justify-content: center;
 	align-items: center;;
 }
+
+.card-group .card.bg-info{
+	background-color: #f0ecfc;
+    background-image: linear-gradient(
+315deg, #f0ecfc 0%, #c797eb 74%);
+transition: ease-in-out all 0.5s;
+    
+}
+
+.card-group .card.bg-dark{
+	background-color: #4dccc6;
+    background-image: linear-gradient(
+315deg, #4dccc6 0%, #96e4df 74%);
+transition: ease-in-out all 0.5s;
+}
+
+.card-group .card.bg-info:first-child:hover{
+	transition: ease-in-out all 0.5s;
+    transform: translate(-20px, -20px);
+	cursor: pointer;
+
+}
+.card-group .card.bg-info:last-child:hover{
+	transition: ease-in-out 0.5s;
+    transform: translate(20px, 20px);
+	cursor: pointer;
+}
+.card-group .card.bg-dark:first-child:hover{
+	transition: ease-in-out 0.5s;
+    transform: translate(-20px, 20px);
+	cursor: pointer;
+}
+.card-group .card.bg-dark:last-child:hover{
+	transition: ease-in-out 0.5s;
+	transform: translate(20px, -20px);
+	cursor: pointer;
+}
+
+/*  */
+button {
+	-webkit-appearance: none;
+	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background-size: 500%;
+	border: none;
+	border-radius: 5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.5rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 4rem;
+	letter-spacing: 0.05em;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 14rem;
+  }
+  
+  button:hover {
+	animation-name: gradient;
+	-webkit-animation-name: gradient;
+	animation-duration: 2s;
+	-webkit-animation-duration: s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+  }
+  
+  @keyframes gradient {
+	0% {
+	  background-position: 0% 50%;
+	}
+	100% {
+	  background-position: 100%;
+	}
+  }
+/*  */
 
 .earth{
 	z-index: 999;
