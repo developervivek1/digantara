@@ -16,12 +16,12 @@ header {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
-	background:rgba(0, 0, 0, 0.6);
+	background: rgba(0, 0, 0, 0.6);
 	z-index: 9;
 
 }
 
-.nav-item.active{
+.nav-item.active {
 	color: white;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 
 .moving-star2 {
-	transform: rotate(190deg);	
+	transform: rotate(190deg);
 }
 
 .tail-star, .tail-star2 {
@@ -257,24 +257,34 @@ button:hover {
 }
 
 
-footer{
+footer {
 	background: rgba(0, 0, 0, 1);
 	background: linear-gradient(to right, #202523 0%, #2b2408 50%, #140301 100%);
 }
 
+footer .border-secondary {
+	border-right: 1px solid white;
+}
+
 /* responsive */
 
-@media (max-width:600px){
-	.moving-star,.moving-star2 {
+@media (max-width:600px) {
+	.moving-star, .moving-star2 {
 		overflow: hidden !important;
 	}
-	.earth{
+
+	.earth {
 		margin-top: 5rem;
 		height: 325px;
-    	width: 325px;
+		width: 325px;
 	}
 
-	.display-4{
+	.display-4 {
 		font-size: 2.5rem;
 	}
+
+	footer .border-secondary {
+		border-right: none;
+	}
+
 }
