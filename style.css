@@ -16,9 +16,13 @@ header {
 	position: sticky;
 	position: -webkit-sticky;
 	top: 0;
-	/* required */
+	background:rgba(0, 0, 0, 0.6);
 	z-index: 9;
 
+}
+
+.nav-item.active{
+	color: white;
 }
 
 
@@ -35,11 +39,10 @@ header {
 /* tail star style */
 .moving-star {
 	transform: rotate(-30deg);
-
 }
 
 .moving-star2 {
-	transform: rotate(190deg);
+	transform: rotate(190deg);	
 }
 
 .tail-star, .tail-star2 {
@@ -72,7 +75,7 @@ header {
 	}
 
 	to {
-		transform: translateX(-200vw);
+		transform: translateX(-100vw);
 		opacity: 0.8;
 	}
 }
@@ -250,5 +253,17 @@ button:hover {
 
 	100% {
 		background-position: 102.5%;
+	}
+}
+
+/* responsive */
+
+@media (max-width:600px){
+	.moving-star {
+		overflow: hidden !important;
+	}
+
+	.moving-star2 {
+		overflow: hidden !important;
 	}
 }
