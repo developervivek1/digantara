@@ -1,12 +1,29 @@
-body{
-	background: url(images/stars.jpg);
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: url(images/bg2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	font-family: 'STIX Two Text', serif;
-	
+	overflow-x: hidden;
+
 }
 
-#particles-js{
+
+header {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	/* required */
+	z-index: 9;
+
+}
+
+
+/* particle.js */
+#particles-js {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -14,63 +31,131 @@ body{
 	bottom: 0;
 }
 
-.container-fluid{
+
+/* tail star style */
+.moving-star {
+	transform: rotate(-30deg);
+
+}
+
+.moving-star2 {
+	transform: rotate(190deg);
+}
+
+.tail-star, .tail-star2 {
+	display: inline-block;
+	background: white;
+	height: 3px;
+	width: 3px;
+	border-radius: 50%;
+	position: relative;
+	animation: tail-star-move 5s ease-in infinite;
+	transform: translateX(-100px);
+	opacity: 0.5;
+
+}
+
+.tail-star:nth-of-type(2) {
+	top: 350px;
+	animation-delay: 2.5s;
+}
+
+.tail-star2:nth-of-type(2) {
+	top: 350px;
+	animation-delay: .5s;
+}
+
+@keyframes tail-star-move {
+	from {
+		transform: translateX(100vw);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateX(-200vw);
+		opacity: 0.8;
+	}
+}
+
+.tail-star:after, .tail-star2:after {
+	content: "";
+	width: 120px;
+	height: 3px;
+	background: linear-gradient(to right, white, transparent);
+	position: absolute;
+	left: 100%;
+	border-radius: 0 50% 50% 0;
+}
+
+
+/* tail star style end*/
+
+.container-fluid {
 	background-color: rgba(0, 0, 0, 0.4);
-	
+
 	top: 0%;
 	bottom: 0%;
 	left: 0%;
 	right: 0%;
 }
 
-.container .img1{
+.container .img1 {
 	border-radius: 50%;
 }
 
-.align-middle{
+.align-middle {
 	display: flex;
 	justify-content: center;
-	align-items: center;;
+	align-items: center;
+	;
 }
 
-.card-group .card.bg-info{
+
+/* animated card style */
+.card-group .card.bg-info {
 	background-color: #f0ecfc;
-    background-image: linear-gradient(
-315deg, #f0ecfc 0%, #c797eb 74%);
-transition: ease-in-out all 0.5s;
-    
-}
-
-.card-group .card.bg-dark{
-	background-color: #4dccc6;
-    background-image: linear-gradient(
-315deg, #4dccc6 0%, #96e4df 74%);
-transition: ease-in-out all 0.5s;
-}
-
-.card-group .card.bg-info:first-child:hover{
+	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
 	transition: ease-in-out all 0.5s;
-    transform: translate(-20px, -20px);
+
+}
+
+.card-group .card.bg-dark {
+	background-color: #4dccc6;
+	background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+	transition: ease-in-out all 0.5s;
+}
+
+.card-group .card.bg-info:first-child:hover {
+	transition: ease-in-out all 0.5s;
+	transform: translate(-20px, -20px);
 	cursor: pointer;
 
 }
-.card-group .card.bg-info:last-child:hover{
+
+.card-group .card.bg-info:last-child:hover {
 	transition: ease-in-out 0.5s;
-    transform: translate(20px, 20px);
+	transform: translate(20px, 20px);
 	cursor: pointer;
 }
-.card-group .card.bg-dark:first-child:hover{
+
+.card-group .card.bg-dark:first-child:hover {
 	transition: ease-in-out 0.5s;
-    transform: translate(-20px, 20px);
+	transform: translate(-20px, 20px);
 	cursor: pointer;
 }
-.card-group .card.bg-dark:last-child:hover{
+
+.card-group .card.bg-dark:last-child:hover {
 	transition: ease-in-out 0.5s;
 	transform: translate(20px, -20px);
 	cursor: pointer;
 }
 
-/*  */
+
+/* animated card style end*/
+
+
+
+/* button style */
 button {
 	-webkit-appearance: none;
 	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
@@ -93,9 +178,9 @@ button {
 	-ms-user-select: none;
 	user-select: none;
 	width: 14rem;
-  }
-  
-  button:hover {
+}
+
+button:hover {
 	animation-name: gradient;
 	-webkit-animation-name: gradient;
 	animation-duration: 2s;
@@ -104,19 +189,23 @@ button {
 	-webkit-animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
-  }
-  
-  @keyframes gradient {
-	0% {
-	  background-position: 0% 50%;
-	}
-	100% {
-	  background-position: 100%;
-	}
-  }
-/*  */
+}
 
-.earth{
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100%;
+	}
+}
+
+/* button style end */
+
+
+/* rotation earth */
+.earth {
 	z-index: 999;
 	margin: auto;
 	/* position: absolute; */
@@ -125,18 +214,41 @@ button {
 	width: 400px;
 	background: url(images/earth.jpeg);
 	box-shadow: inset 0 0 20px #03a9f4,
-				0 0 120px #03a9f4;
-	animation:animationEarth 60s linear infinite;
+		0 0 120px #03a9f4;
+	animation: animationEarth 60s linear infinite;
 }
 
-@keyframes animationEarth
-{
- 0%
- {
-	 background-position: 0%;
- }
- 100%
- {
-	 background-position: 102.5%;
- }
+@keyframes animationEarth {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 102.5%;
+	}
+}
+
+
+.earth2 {
+	position: absolute;
+	top: 0%;
+	;
+	border-radius: 50%;
+	z-index: -999;
+	box-shadow: inset 50px 0px 20px 0px #050505,
+		0 0 120px #bec3c5;
+	animation: animationSvg 60s linear infinite;
+	width: 150px;
+	height: 150px;
+	background: url(images/lunar.jpg);
+}
+
+@keyframes animationSvg {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 102.5%;
+	}
 }
