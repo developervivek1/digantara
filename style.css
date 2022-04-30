@@ -256,6 +256,12 @@ button:hover {
 	}
 }
 
+
+footer{
+	background: rgba(0, 0, 0, 1);
+	background: linear-gradient(to right, #202523 0%, #2b2408 50%, #140301 100%);
+}
+
 /* responsive */
 
 @media (max-width:600px){
