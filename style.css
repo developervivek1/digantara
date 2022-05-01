@@ -287,4 +287,11 @@ footer .border-secondary {
 		border-right: none;
 	}
 
+	footer .col-md-4 {
+		padding-bottom: 1rem;
+	}
+
+	footer .text-center {
+		text-align: left !important;
+	}
 }
