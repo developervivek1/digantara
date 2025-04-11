@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 html {
 	scroll-behavior: smooth;
 }
@@ -6,9 +8,18 @@ body {
 	background: url(images/bg2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	font-family: 'STIX Two Text', serif;
+	font-family: 'Montserrat';
 	overflow-x: hidden;
 
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	
+	p{
+		font-size: 16px;
+		font-weight: 200;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
 }
 
 
@@ -266,6 +277,9 @@ footer .border-secondary {
 	border-right: 1px solid white;
 }
 
+.fw-bold{
+	font-weight: bold;
+}
 /* responsive */
 
 @media (max-width:600px) {
