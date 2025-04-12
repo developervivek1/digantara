@@ -257,6 +257,7 @@ button:hover {
 	background: url(images/lunar.jpg);
 }
 
+
 @keyframes animationSvg {
 	0% {
 		background-position: 0%;
@@ -280,9 +281,26 @@ footer .border-secondary {
 .fw-bold{
 	font-weight: bold;
 }
+
+.about-sec{
+	p{
+		text-align: justify;
+		letter-spacing: 1px;
+		word-spacing: normal;
+	}
+}
+
+
+
+
+
+
 /* responsive */
 
 @media (max-width:600px) {
+	/* body{
+		overflow-x: hidden;
+	} */
 	.moving-star, .moving-star2 {
 		overflow: hidden !important;
 	}
