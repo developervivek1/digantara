@@ -302,8 +302,16 @@ footer .border-secondary {
         word-spacing: 1.5px;
 	}
 }
+.contact-icons{
+	position: absolute;
+    bottom: 0px;
+    background: white;
+    padding: 12px;
+	img{
+		width: 25px;
 
-
+	}
+}
 
 /* responsive */
 
