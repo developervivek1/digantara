@@ -312,6 +312,11 @@ footer .border-secondary {
 
 	}
 }
+.filterTabs button.active {
+	/* background-color: #52e2e7 !important; */
+	background: none;
+	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  }
 
 /* responsive */
 
