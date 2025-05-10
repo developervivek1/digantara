@@ -23,7 +23,34 @@ body {
 }
 
 
-
+.resume-pop{
+	z-index: 999;
+    right: 0;
+    top: 200px;
+    background: #a0efa0;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+    background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+    background-size: 500%;
+    border: none;
+    border-radius: 5rem 0 0 5rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* height: 4rem; */
+    letter-spacing: 0.05em;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-weight: bold;
+}
 header {
 	position: sticky;
 	position: -webkit-sticky;
