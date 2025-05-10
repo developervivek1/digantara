@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+	<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+		integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+
+
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: url(images/bg2.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: 'Montserrat';
+	overflow-x: hidden;
+	background-attachment: fixed;
+	font-family: "Montserrat", sans-serif;
+	font-optical-sizing: auto;
+	
+	p{
+		font-size: 16px;
+		font-weight: 200;
+		letter-spacing: 1px;
+		word-spacing: 2px;
+	}
+}
+
+
+
+header {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 9;
+
+}
+
+.nav-item.active {
+	color: white;
+}
+
+
+/* particle.js */
+#particles-js {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+}
+
+
+/* tail star style */
+.moving-star {
+	transform: rotate(-30deg);
+}
+
+.moving-star2 {
+	transform: rotate(190deg);
+}
+
+.tail-star, .tail-star2 {
+	display: inline-block;
+	background: white;
+	height: 3px;
+	width: 3px;
+	border-radius: 50%;
+	position: relative;
+	animation: tail-star-move 5s ease-in infinite;
+	transform: translateX(-100px);
+	opacity: 0.5;
+
+}
+
+.tail-star:nth-of-type(2) {
+	top: 350px;
+	animation-delay: 2.5s;
+}
+
+.tail-star2:nth-of-type(2) {
+	top: 350px;
+	animation-delay: .5s;
+}
+
+@keyframes tail-star-move {
+	from {
+		transform: translateX(100vw);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateX(-100vw);
+		opacity: 0.8;
+	}
+}
+
+.tail-star:after, .tail-star2:after {
+	content: "";
+	width: 120px;
+	height: 3px;
+	background: linear-gradient(to right, white, transparent);
+	position: absolute;
+	left: 100%;
+	border-radius: 0 50% 50% 0;
+}
+
+
+/* tail star style end*/
+
+.container-fluid {
+	background-color: rgba(0, 0, 0, 0.4);
+
+	top: 0%;
+	bottom: 0%;
+	left: 0%;
+	right: 0%;
+}
+
+.container .img1 {
+	border-radius: 50%;
+}
+
+.align-middle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	;
+}
+
+
+/* animated card style */
+.card-group .card.bg-info {
+	background-color: #f0ecfc;
+	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+	transition: ease-in-out all 0.5s;
+
+}
+
+.card-group .card.bg-dark {
+	background-color: #4dccc6;
+	background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+	transition: ease-in-out all 0.5s;
+}
+
+.card-group .card.bg-info:first-child:hover {
+	transition: ease-in-out all 0.5s;
+	transform: translate(-20px, -20px);
+	cursor: pointer;
+
+}
+
+.card-group .card.bg-info:last-child:hover {
+	transition: ease-in-out 0.5s;
+	transform: translate(20px, 20px);
+	cursor: pointer;
+}
+
+.card-group .card.bg-dark:first-child:hover {
+	transition: ease-in-out 0.5s;
+	transform: translate(-20px, 20px);
+	cursor: pointer;
+}
+
+.card-group .card.bg-dark:last-child:hover {
+	transition: ease-in-out 0.5s;
+	transform: translate(20px, -20px);
+	cursor: pointer;
+}
+
+
+/* animated card style end*/
+
+
+
+/* button style */
+button {
+	-webkit-appearance: none;
+	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background-size: 500%;
+	border: none;
+	border-radius: 5rem;
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+	color: #fff;
+	cursor: pointer;
+	font-size: 1.5rem;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 4rem;
+	letter-spacing: 0.05em;
+	outline: none;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	width: 14rem;
+}
+
+button:hover {
+	animation-name: gradient;
+	-webkit-animation-name: gradient;
+	animation-duration: 2s;
+	-webkit-animation-duration: s;
+	animation-iteration-count: 1;
+	-webkit-animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	100% {
+		background-position: 100%;
+	}
+}
+
+/* button style end */
+
+
+/* rotation earth */
+.earth {
+	z-index: 999;
+	margin: auto;
+	/* position: absolute; */
+	border-radius: 50%;
+	height: 400px;
+	width: 400px;
+	background: url(images/earth.jpeg);
+	box-shadow: inset 0 0 20px #03a9f4,
+		0 0 120px #03a9f4;
+	animation: animationEarth 60s linear infinite;
+}
+
+@keyframes animationEarth {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 102.5%;
+	}
+}
+
+
+.earth2 {
+	position: absolute;
+	top: 0%;
+	;
+	border-radius: 50%;
+	z-index: -999;
+	box-shadow: inset 50px 0px 20px 0px #050505,
+		0 0 120px #bec3c5;
+	animation: animationSvg 60s linear infinite;
+	width: 150px;
+	height: 150px;
+	background: url(images/lunar.jpg);
+}
+
+
+@keyframes animationSvg {
+	0% {
+		background-position: 0%;
+	}
+
+	100% {
+		background-position: 102.5%;
+	}
+}
+
+
+footer {
+	background: rgba(0, 0, 0, 1);
+	background: linear-gradient(to right, #202523 0%, #2b2408 50%, #140301 100%);
+}
+
+footer .border-secondary {
+	border-right: 1px solid white;
+}
+
+.fw-bold{
+	font-weight: bold;
+}
+
+.about-sec{
+	p{
+		text-align: justify;
+		letter-spacing: 1px;
+		word-spacing: normal;
+	}
+}
+
+.opacity-50{
+	opacity: 0.5;
+}
+.work-experience{
+	li,p{
+		font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        word-spacing: 1.5px;
+	}
+}
+.contact-icons{
+	position: absolute;
+    bottom: 0px;
+    background: white;
+    padding: 12px;
+	img{
+		width: 25px;
+
+	}
+}
+.filterTabs button.active {
+	/* background-color: #52e2e7 !important; */
+	background: none;
+	background-image: linear-gradient(315deg, #f0ecfc 0%, #c797eb 74%);
+  }
+
+/* responsive */
+
+@media (max-width:600px) {
+	/* body{
+		overflow-x: hidden;
+	} */
+	.moving-star, .moving-star2 {
+		overflow: hidden !important;
+	}
+
+	.earth {
+		margin-top: 5rem;
+		height: 325px;
+		width: 325px;
+	}
+
+	.display-4 {
+		font-size: 2.5rem;
+	}
+
+	footer .border-secondary {
+		border-right: none;
+	}
+
+	footer .col-md-4 {
+		padding-bottom: 1rem;
+	}
+
+	footer .text-center {
+		text-align: left !important;
+	}
+}
+    </style>
+
+</head>
+<body>
+
+    
+    <!-- <header>
+		<div class="container-fluid">
+			<div class="container pt-2 pb-2">
+
+				<nav class="navbar navbar-expand-md  navbar-dark">
+					<a class="navbar-brand font-weight-bold" href="./">Vivek Pathak</a>
+					<a class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+						<span class="navbar-toggler-icon"></span>
+					</a>
+					<div class="collapse navbar-collapse " id="collapsibleNavbar">
+						<ul class="navbar-nav ml-auto font-weight-bold">
+							<li class="nav-item pr-3">
+								<a class="nav-link" href="./">Home</a>
+							</li>
+							<li class="nav-item pr-3 active">
+								<a class="nav-link" href="./about-us.html">About</a>
+							</li>
+							
+							<li class="nav-item pr-3">
+								<a class="nav-link" href="./portfolio.html">Portfolio</a>
+							</li>
+							
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact Us</a>
+							</li>
+
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header> -->
+ 
+        <!-- <section class="my-5 ">
+            <div class="container">
+                <h1 class="display-3 mb-4 pb-3  text-center opacity-50 fw-bold d-none d-md-block text-light">ABOUT ME</h1>
+                    <h1 class="display-6 mb-4 pb-3  text-center opacity-50 fw-bold d-block d-md-none text-light">ABOUT ME</h1>
+                    
+                <div class="bg-dark">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="bg-dark about-sec p-3">
+                                
+                                <p class="text-white">
+                                    I am Vivek Pathak, a 2017 graduate with a B.Tech in Computer Science & Engineering from a reputed state government university in Uttar Pradesh. With over 6 years of professional experience in front-end development and UI/UX design, 
+                                </p>
+                                <p class="text-white"> I have successfully delivered a wide range of web applications, websites, and admin dashboards, all developed from the ground up.
+                                </p>
+                                <p class="text-white">
+                                    My expertise lies in creating clean, responsive, and high-performing user interfaces using modern front-end technologies such as HTML, CSS, Bootstrap, ES6, JavaScript, and React.js.
+                        
+                                </p>
+                               
+                               <p class="text-white">
+                                I am passionate about building intuitive and engaging user experiences that work seamlessly across all major browsers and devices.
+                               
+                               </p>
+                                <p class="text-white">
+                                    I take pride in writing maintainable and scalable code, collaborating effectively with cross-functional teams, and continuously improving UI workflows. I am also well-versed in applying best practices in accessibility, performance optimization, and responsive design. Driven by a strong attention to detail and a user-first mindset, I consistently aim to deliver products that not only meet business goals but also provide an excellent user experience.
+        
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="d-flex justify-content-center align-items-center h-100">
+                                <div class="p-3">
+                                    <div class="position-relative">
+                                        <img class="img-fluid" loading="lazy" src="./images/mypic2.jpeg" alt="">
+                                        <div class="contact-icons w-100 d-flex justify-content-between align-items-center">
+                                            <a href="https://wa.me/9511198565" target="_blank"><img class="" src="./images/porfolio/whatsapp.svg" alt="whatsapp"></a>
+                                            <a target="_blank" href="https://www.linkedin.com/in/vivekpathak01/"><img class="" src="./images/porfolio/linkedin.svg" alt="linkedin"></a>
+                                            <a target="_blank" href="tel:9511198565"><img class="" src="./images/porfolio/telephone-fill.svg" alt="call"></a>
+                                            <a target="_blank" href="https://github.com/developervivek1"><img class="" src="./images/porfolio/github.svg" alt="git"></a>
+                                            
+                                         
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </section> -->
+    
+
+    <section>
+        <div class="container my-5 py-5">
+            
+            <div class="bg-white p-3 work-experience">
+                <div class="mb-4">
+                    <div class="row" style="height: 192px;">
+                        <div class="col-md-2">
+                            <img class="img-fluid"  src="./images/mypic2.jpeg" alt="" style="width: 200px;">
+                        </div>
+                        <div class="col-md-10">
+                            <div class="h-100 d-flex flex-wrap align-content-between" style="height: 300px;">
+                                <div>
+                                    <h1 class="display-4 mb-0 mt-0 text-start opacity-75 fw-bold d-none d-md-block">VIVEK KUMAR PATHAK</h1>
+                                    <div style="display: flex;justify-content: start;gap: 1rem;">
+                                        <h5 class="display-6 text-start opacity-75 fw-bold" style="font-weight:600;">B.TECH/CSE (2017)</h5>
+                                        <div>|</div>
+                                        <h5 class="display text-start text-secondary" style="font-weight:400;">UI Developer / Front-end Developer</h4>
+                                    </div>
+                                </div>
+                               
+
+                                <div style="display: flex;justify-content:space-between;align-items: start; gap: 2rem;">
+                                   <div>
+                                        <h5 class=" mb-0 text-start opacity-75 fw-bold" style="font-size: 22px;font-weight: 600;">+91 9511198565 <span class="opacity-50" style="font-weight: 300;"> | </span> +91 8318303797</h5>
+                                        <h5 class="display text-start text-secondary mb-0 mt-1" style="font-size: 18px;font-weight: 400;">vivekpathak.emmy1234@gmail.com</h4>
+                                   </div>
+                                   <div class="d-flex" style="gap: 2rem;">
+                                        <a target="_blank" href="https://www.linkedin.com/in/vivekpathak01/" style="font-size: 14px;">LinkedIn</a>
+                                        <a target="_blank" href="https://github.com/developervivek1" style="font-size: 14px;">GitHub</a>
+                                        <a target="_blank" href="https://vivekpathak.netlify.app/portfolio" style="font-size: 14px;">Website/Portfolio</a>
+                                   </div>
+                                </div>
+                              
+                            </div>
+                        </div>
+                 
+                         
+                    </div>
+                </div>
+
+                <div class="my-5">
+                    <h1 style="font-size: 30px;font-weight: 600;">OBJECTIVE</h1>
+                    <p>An effective UI/UX or Front-end Developer with 6 years of experience. Bilingual, clever, and deadline-driven. A hardworking team player seeking to leverage my skills in the UI developer or Front-end developer role, making the Organisation successful.</p>
+                </div>
+                <div class="my-5">
+                    <h1 style="font-size: 30px;font-weight: 600;text-transform: uppercase;">Key Skills</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <ul>
+                                <li>HTML5</li>
+                                <li>CSS3</li>
+                                <li>SCSS</li>
+                                <li>BOOTSTRAP-3,4,5</li>
+                                <li>Tailwind Css</li>
+                                <li>Responsive Web Design</li>
+                                <li>Front-end</li>
+                                <li>Web Development</li>
+                               
+                                
+                            </ul>
+                        </div>
+                        <div class="col-md">
+                            <ul>
+                                <li>JavaScript</li>
+                                <li>ES-6</li>
+                                <li>Reactjs</li>
+                                <li>Hooks</li>
+                                <li>Web Content Accessibility Guidelines (WCAG) & ADA</li>
+                                <li>Browser Compatibility</li>
+                                <li>Performance Optimization</li>
+                                <li>Wordpress</li>
+                            </ul>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div>
+                <h1 class="mb-3" style="font-size: 30px;font-weight: 600;">WORK EXPERIENCE</h1>
+
+                <div class="row">
+                    <div class="col-md-5">
+                        <div>
+                            <h4>AppCore Labs India, Pvt Ltd</h4>
+                            <h6>Chandigarh - Remote</h6>
+                            <h5 class="opacity-50">Mar 2023 - Nov 2024</h5>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>Front-end developer</h4>
+                            <h6>Project: FILEJECT | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://filejet.com/' target="_blank">Go Live</a></h6>
+                            <h6>Project: FILEJECT Dashboard | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://filejet-redesign.vercel.app/' target="_blank">Go Live</a></h6>
+                            <p>Filejet’s entity management software organizes & files all of your entity reports: every year,
+                                in every jurisdiction – with total visibility.
+                            </p>
+                            <p>Automate everything: entity compliance, registered agent services, annual report and BOI filings, org charts, and DBA/fictitious name and business registration renewals, so you can focus on higher-value work.</p>
+                            <h6>Roles & Responsibilities</h6>
+                            <ul>
+                                <li>Utilized HTML5, CSS3, BOOTSTRAP-5, ES6, SCSS, and JavaScript to create a dynamic dashboard & Implemented a complex interactive user interface that improved user experience, ensuring high performance and responsiveness.</li>
+                                <li>Collaborated with UX/UI designers to translate design mockups into functional web pages.</li>
+                                <li>Worked closely with backend developers to integrate front-end components and troubleshooted and debugged UI Components to resolve issues and improve performance.
+                                </li>
+                                <li>Successfully converted Figma UI/UX designs into real-time, production-ready HTML and CSS code, maintaining pixel-perfect precision and responsiveness across all devices and modern browsers.</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div>
+                            <h4>Goprotoz design Studio Pvt Ltd</h4>
+                            <h6>Bangalore - Remote</h6>
+                            <h5 class="opacity-50">Aug 2021 - Mar 2023</h5>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>UI/UX Developer</h4>
+                            <h6>Project: PM-CONNECT Dashboard | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://pmmainview.netlify.app/dashboard.html' target="_blank">Go Live</a></h6>
+                            <p>A project management software
+                                Key Features are Task Management, Kanban Board, Calendar Integration,Team Collaboration,Analytics & Reporting, Role-Based Access & More...</p>
+                            <h6>Project: UPGRAD Campus | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://college.upgradcampus.com/' target="_blank">Go Live</a> <a class="btn btn-info w-auto h-auto p-0 px-2" href="https://upgrad-campus-new.netlify.app/">Go Demo</a></h6>
+                            <p>upGrad Campus is a vertical of upGrad,that offers state-of-the-art technology and learning solutions for Higher Education Institutions.</p>
+                            <h6>Project: SONY India | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://sony-website.netlify.app/' target="_blank">Go Demo</a> 
+                            <p></p>
+                            <h6>Project: GetMyBooks | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://getmybooks.netlify.app/' target="_blank">Go Demo</a> <a class="btn btn-info w-auto h-auto p-0 px-2" href="https://getmybooks.com/">Go Live</a></h6>
+                            <p>E-Commerce  Books Selling  Store: Get My Books is a part of Katha O Kahini Educational which was founded by Manosh Patra and Debraj Patra in the year 2017. It is a portal dedicated to school items and making it easier for parents to buy books, uniforms and much more for their kids.
+                            </p>
+                            
+                            <h6>Roles & Responsibilities</h6>
+                            <ul>
+                                <li>Actively interacted with clients to understand their requirements, provide regular updates, gather feedback, and deliver UI solutions that aligned with their business goals and design preferences.</li>
+                                <li>Developed a custom and Interactive Dashboard and many websites that increased user experience. By Using tech stack like HTML5, CSS3, BOOTSTRAP-4,5 and React.js.</li>
+                                <li>Collaborated with designers to ensure designs were efficient, interactive, responsive across browsers & mobile friendly, and technically sound.
+                                </li>
+                                <li>Implemented a mobile-first approach to existing websites and conducted A/B testing to identify bugs and UI improvements.</li>
+                                <li>Utilized HTML5, CSS3, BOOTSTRAP-5, ES6, SCSS, and JavaScript to create a dynamic dashboard & Implemented a complex interactive user interface that improved user experience, ensuring high performance and responsiveness.</li>
+                                <li>Optimize frontend performance to ensure fast loading and smooth user interactions. Implement best practices for web accessibility (WCAG) and cross-browser compatibility. Maintained high-quality coding standards, documentation.</li>
+                                
+                                <li>Converted Figma designs into fully responsive, pixel-perfect web pages using HTML, CSS, and Bootstrap, ensuring design accuracy and cross-browser compatibility.</li>
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div>
+                            <h4>Proof Of Performance Data Services Pvt Ltd</h4>
+                            <h6>New Delhi - Remote</h6>
+                            <h5 class="opacity-50">Apr 2020 — Apr 2021</h5>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>Software Developer</h4>
+                            <h6>Project: | National Informatic Center | PANI Portal | <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://pani.iwai.nic.in/' target="_blank">Go Live</a></h6>
+                            <p>This project is all about government NIC project called as PORTAL FOR ASSETS AND NAVIGATIONAL INFORMATION PANI is a digital service by IWAI that provides key systematic and aggregated River and Navigation information related to National Waterways in India for facilitating the transportation of cargo and other vessels through National Waterways.</p>
+                            
+                            <h6>Roles & Responsibilities</h6>
+                            <ul>
+                                <li>Develop and maintain frontend components for websites and Dashboard using HTML5, CSS3, BOOTSTRAP, and JAVASCRIPT and media query for mobile responsive.
+                                </li>
+                                <li>Work closely with backend developers to ensure seamless integration and data flow. Ensure that responsive design and mobile-first principles are consistently applied.</li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div>
+                            <h4>RedGrape Technologies Pvt Ltd</h4>
+                            <h6>New Delhi - Office</h6>
+                            <h5 class="opacity-50">Apr 2019 - Mar 2020</h5>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>Full Stack Developer</h4>
+                            <h6>Project: JRHU  <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://jrdu.ac.in/' target="_blank">Go Live</a></h6>
+                            <p>The Jagadguru Rambhadracharya Divyanga University was established to provide higher & professional education to persons with disabilities. There are approximate 9 crore disabled in India. The coverage in formal school system is around 5%. The scenario of higher education is much grim.</p>
+                            
+                            <h6>Roles & Responsibilities</h6>
+                            <ul>
+                                <li>Developed JRHU website by using tech stack Wordpress with elementor and HTML, CSS for UI customisation and maintain JRHU dashboard using HTML CSS BOOTSTRAP and Javascript.
+                                </li>
+                                <li>Work closely with backend developers to ensure seamless integration and data flow. Optimize website performance to ensure fast loading and smooth user interactions.</li>
+                                <li>Implement best practices for web accessibility (WCAG) and cross-browser compatibility.</li>
+                                <li>Ensure that responsive design and mobile-first principles are consistently applied. Maintain high-quality coding standards, documentation.
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-5">
+                        <div>
+                            <h4>Bhooma Education Pvt Ltd</h4>
+                            <h6>New Delhi - Office</h6>
+                            <h5 class="opacity-50">Jan 2018 - Apr 2019</h5>
+                        </div>
+    
+                    </div>
+                    <div class="col-md-7">
+                        <div>
+                            <h4>Front-end Developer</h4>
+                            <h6>Project: UCC Website <a class="btn btn-info w-auto h-auto p-0 px-2" href=' https://unitedcorrespondencecollege.in/' target="_blank">Go Live</a></h6>
+                            <p>
+                                UCC of Distance Education offers affordable   and cost-effective distance learning program  offered by open universities.</p>
+                            
+                                <h6>Project: EMAAR Dashboard <a class="btn btn-info w-auto h-auto p-0 px-2" href='https://emaar-mall.netlify.app/dashboard' target="_blank">Go Live</a></h6>
+                                
+                            
+                            <h6>Roles & Responsibilities</h6>
+                            <ul>
+                                <li>
+                                    Developed and maintained the dashboard and website by using tech stack Wordpress and HTML CSS bootstrap. for seamless user experience and mobile friendly across browser compatibility.
+                                </li>
+                               
+                                <li>Work closely with backend developers to ensure seamless integration and data flow. Optimize website performance to ensure fast loading and smooth user interactions.</li>
+                                <li>Ensure that responsive design and mobile-first principles are consistently applied. Maintain high-quality coding standards, documentation.
+                                </li>
+                               
+                            </ul>
+                        </div>
+                    </div>
+    
+                </div>
+                </div>
+                <div class="my-5">
+                    <h1 style="font-size: 30px;font-weight: 600;">LANGUAGES </h1>
+                    <p>Fluent in <b class="fw-bold">English</b> and <b class="fw-bold">Hindi</b>; able to communicate effectively in both professional and social settings.</p>
+                </div>
+                <div class="my-5">
+                    <h1 style="font-size: 30px;font-weight: 600;">EDUCATION</h1>
+                    <p>VBS Purvanchal University, <em>Jaunpur, Uttar Pradesh</em> Graduated in <b>2017</b> from a reputed state government university in Uttar Pradesh, with a strong foundation in software development, algorithms, and computer systems.</p>
+                </div>
+            
+            </div>
+
+        </div>
+    </section>
+    
+    <!-- <footer class="bg-dark">
+		<div id="news" class="container-fluid bg-dark">
+			<div class="container pt-5">
+				<div class="row text-light text-center">
+					<div class="col-md-4 border-secondary">
+						<h4>VIVEK PATHAK</h4>
+						<p>Front-end UI/UX developer
+							An effective UI/UX or Front-end Developer who has 6 year's of expertise. Bilingual, clever and deadline- driven.</p>
+
+					</div>
+					<div class="col-md-4 border-secondary">
+						<h4>Useful Links</h4>
+						<ul class="list-group list-group-flush " style="list-style-type: none;">
+							<li class="p-1"><a class="text-decoration-none text-light" href="about-us.html">About Us</a></li>
+							<li class="p-1"><a class="text-decoration-none text-light" href="./portfolio.html">Portfolio</a></li>
+							<li class="p-1"><a class="text-decoration-none text-light" href="./images/Vivek_Pathak_2025.pdf" target="_blank">Download Resume</a></li>
+						</ul>
+
+					</div>
+					<div class="col-md-4">
+						<h4>Contact Us</h4>
+						<ul class="list-group list-group-flush " style="list-style-type: none;">
+							<li class="p-1"><a class="text-decoration-none text-light" href="#"><i
+										class="fas fa-mobile-alt"></i> : +91 9511198565</a></li>
+							<li class="p-1"><a class="text-decoration-none text-light" href="#"><i
+										class="fas fa-mail-bulk"></i> : vivekpathak.emmy1234@gmail.com.</a></li>
+							<li class="p-1"><a class="text-decoration-none text-light" href="#"><i
+										class="fas fa-home"></i> : Prayagraj, Uttar-Pradesh (U.P.), India</a></li>
+
+						</ul>
+
+
+
+					</div>
+
+				</div>
+				<hr class="border-top border-secondary">
+
+				<div class="pb-2 text-light">
+					<center>
+						<h6>Copyright 2025 Vivek Pathak &nbsp;&nbsp;|&nbsp;&nbsp; +91 9511198565
+							&nbsp;&nbsp;|&nbsp;&nbsp; Terms and Conditions</h6>
+					</center>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer> -->
+
+
+
+	<script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+	<script src="script.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
