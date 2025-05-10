@@ -351,6 +351,9 @@ footer .border-secondary {
 	/* body{
 		overflow-x: hidden;
 	} */
+	 .resume-pop {
+		font-size: 10px;
+	 }
 	.moving-star, .moving-star2 {
 		overflow: hidden !important;
 	}
