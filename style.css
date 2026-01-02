@@ -75,7 +75,7 @@ footer{
     right: 0;
     top: 200px;
     background: #a0efa0;
-    padding: 10px;
+    padding: 3px;
     border-radius: 20px 0 0 20px;
 	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
     background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
@@ -179,7 +179,7 @@ header {
 
 /* tail star style end*/
 
-.container-fluid {
+.container-myfluid {
 	background-color: rgba(0, 0, 0, 0.4);
 
 	top: 0%;
@@ -245,7 +245,7 @@ header {
 
 
 /* button style */
-button ,.btn{
+button, .contact-us button {
 	-webkit-appearance: none;
 	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, green 100%);
 	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, green 100%);
@@ -446,3 +446,168 @@ button:hover {
 		text-align: left !important;
 	}
 }
+
+
+
+/* our services section css*/
+
+.our-services{
+	margin:7rem 0;
+	.service-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+    /* background: #161623b8; */
+	padding: 3rem 0;
+}
+
+.service-body::before {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(255, 0, 0, 0.853), rgba(255, 0, 255, 0.756));
+	
+    clip-path: circle(30% at right 70%); */
+
+	content: '';
+        position: absolute;
+        top: 24px;
+        /* left: 0; */
+        right: -38%;
+        width: 61%;
+        height: 135%;
+        background: linear-gradient(rgba(255, 0, 0, 0.853), rgba(255, 0, 255, 0.756));
+        clip-path: circle(30% at right 70%);
+        clip-path: circle(30% at 40% 41%);
+}
+
+.service-body::after {
+    /* content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#2196f3, #e91e63);
+    clip-path: circle(20% at 10% 10%);
+	clip-path: circle(30% at 40% 41%); */
+
+
+	content: '';
+        position: absolute;
+        top: -37px;
+        left: 0;
+        width: 32%;
+        height: 95%;
+        background: linear-gradient(#2196f3, #e91e63);
+        clip-path: circle(20% at 10% 10%);
+        clip-path: circle(40% at 26% 45%);
+}
+
+.container-service{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* max-width: 1200px; */
+    flex-wrap: wrap;
+    z-index: 1;
+	column-gap: 1.8rem;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    width: 360px;
+    height: 400px;
+    /* margin: 30px; */
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, .5);
+    border-radius: 15px;background: rgba(255, 255, 255, .1);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, .5);
+    border-left: 1px solid rgba(255, 255, 255, .5);
+    backdrop-filter: blur(5px);
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+    transform: translateY(10px);
+    opacity: 1;
+    transition: .5s;
+}
+
+.card:hover .content {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.content h2 {
+    position: absolute;
+    top: -90px;
+    right: 30px;
+    font-size: 115px;
+    color: rgb(255 255 255 / 19%);
+    pointer-events: none;
+	font-weight: 600;
+}
+
+.content h3 {
+    font-size: 28px;
+    color: #fff;
+    z-index: 1;
+}
+
+.content p {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+}
+
+/* Gradient overlay */
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(99, 102, 241, 0.12),   /* bottom color (very light) */
+    rgba(99, 102, 241, 0.02),   /* top color (almost transparent) */
+    transparent
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+
+
+/* Keep content above gradient */
+.card .content {
+  position: relative;
+  z-index: 1;
+}
+}
+/* our services section css end*/
