@@ -247,8 +247,8 @@ header {
 /* button style */
 button ,.btn{
 	-webkit-appearance: none;
-	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
-	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, green 100%);
+	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, green 100%);
 	background-size: 500%;
 	border: none;
 	border-radius: 5rem;
@@ -268,6 +268,7 @@ button ,.btn{
 	user-select: none;
 	width: 11rem;
 	font-weight: 600;
+	transition: all 0.5s;
 }
 .viweblabs-big-logo{
     border-radius: 100px;
@@ -277,13 +278,14 @@ button ,.btn{
 }
 .navbar-brand img:hover, .footer-logo:hover{
 	box-shadow: 10px 10px 10px aquamarine;
-	box-shadow: 3px 0px 48px aquamarine;
+	box-shadow: 3px 0px 25px aquamarine;
 	transition: all 0.5s;
 }
 .contact-us{
 	input,textarea{
 		background-color: transparent;
 		color: #fff;
+		border-radius: 11px;
 	}
 	input:focus,textarea:focus{
 		color: #050505;
@@ -299,6 +301,7 @@ button:hover {
 	-webkit-animation-iteration-count: 1;
 	animation-fill-mode: forwards;
 	-webkit-animation-fill-mode: forwards;
+	transition: all 0.5s;
 }
 
 @keyframes gradient {
