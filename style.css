@@ -53,6 +53,17 @@ body {
 .navbar-brand{
 	img{
 		border-radius: 50px;
+		transition: all 0.5s;
+	}
+}
+.footer-logo{
+	border-radius: 50px;
+	transition: all 0.5s;
+}
+footer{
+	background: black !important;
+	.container-fluid.bg-dark{
+		background: black !important;
 	}
 }
 .welcome-text{
@@ -234,7 +245,7 @@ header {
 
 
 /* button style */
-button {
+button ,.btn{
 	-webkit-appearance: none;
 	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
 	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
@@ -260,8 +271,24 @@ button {
 }
 .viweblabs-big-logo{
     border-radius: 100px;
+	cursor: pointer;
+	box-shadow: 3px 0px 48px aquamarine;
+	transition: all 0.5s;
 }
-
+.navbar-brand img:hover, .footer-logo:hover{
+	box-shadow: 10px 10px 10px aquamarine;
+	box-shadow: 3px 0px 48px aquamarine;
+	transition: all 0.5s;
+}
+.contact-us{
+	input,textarea{
+		background-color: transparent;
+		color: #fff;
+	}
+	input:focus,textarea:focus{
+		color: #050505;
+	}
+}
 
 button:hover {
 	animation-name: gradient;
@@ -338,14 +365,9 @@ button:hover {
 }
 
 
-footer {
-	background: rgba(0, 0, 0, 1);
-	background: linear-gradient(to right, #202523 0%, #2b2408 50%, #140301 100%);
-}
 
-footer .border-secondary {
-	border-right: 1px solid white;
-}
+
+
 
 .fw-bold{
 	font-weight: bold;
