@@ -50,7 +50,14 @@ body {
 		word-spacing: 2px;
 	}
 }
-
+.navbar-brand{
+	img{
+		border-radius: 50px;
+	}
+}
+.welcome-text{
+	border-radius: 10px 50px 50px 100px;
+}
 
 .resume-pop{
 	z-index: 999;
@@ -237,10 +244,10 @@ button {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 	color: #fff;
 	cursor: pointer;
-	font-size: 1.5rem;
+	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height: 4rem;
+	height: 56px;
 	letter-spacing: 0.05em;
 	outline: none;
 	-webkit-tap-highlight-color: transparent;
@@ -248,8 +255,13 @@ button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	width: 14rem;
+	width: 11rem;
+	font-weight: 600;
 }
+.viweblabs-big-logo{
+    border-radius: 100px;
+}
+
 
 button:hover {
 	animation-name: gradient;
