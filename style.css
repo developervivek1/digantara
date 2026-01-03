@@ -112,10 +112,15 @@ footer{
 }
 header {
 	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
-	background: rgba(0, 0, 0, 0.6);
-	z-index: 9;
+    position: -webkit-sticky;
+    top: 0;
+    background: rgb(36 55 63 / 42%);
+    z-index: 9;
+    backdrop-filter: blur(10px);
+    max-width: 90%;
+    margin: auto;
+    border-radius: 50px;
+    top: 10px;
 
 }
 
