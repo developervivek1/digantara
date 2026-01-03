@@ -6,6 +6,18 @@
     font-size: 32px;
     letter-spacing: -0.5px; /* Tights spacing for modern look */
 }
+.link-tag, .link-tag:hover{
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 500;
+	margin-left: 2rem;
+	/* border-bottom: 1px solid #fff; */
+	text-decoration: underline;
+	i{
+		rotate: -30deg;
+		/* font-weight: 500; */
+	}
+}
 
 .text-viweb {
     font-weight: 700; /* Bold */
@@ -269,7 +281,7 @@ button, .contact-us button {
 	font-size: 20px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	height: 56px;
+	height: 46px;
 	letter-spacing: 0.05em;
 	outline: none;
 	-webkit-tap-highlight-color: transparent;
@@ -277,7 +289,7 @@ button, .contact-us button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	width: 11rem;
+	width: 10rem;
 	font-weight: 600;
 	transition: all 0.5s;
 }
