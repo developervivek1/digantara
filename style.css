@@ -867,7 +867,11 @@ button:hover {
 		right: 0;
 	}
 }
-
+.owl-nav{
+	button:focus{
+		outline: none;
+	}
+}
 
 	}
 /* testi end */
