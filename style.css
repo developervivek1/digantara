@@ -178,7 +178,11 @@ header {
 
 
 /* tail star style end*/
-
+.display-4.font-weight-bold{
+	background: linear-gradient(225deg, #04fffe 14.89%, #2ac870 85.85%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 .container-myfluid {
 	background-color: rgba(0, 0, 0, 0.4);
 
@@ -198,7 +202,14 @@ header {
 	align-items: center;
 	;
 }
-
+.our-services {
+	button{
+		height: 42px;
+		width: 120px;
+		font-size: 16px;
+		font-weight: 500;
+	}
+}
 
 /* animated card style */
 .card-group .card.bg-info {
@@ -538,13 +549,13 @@ button:hover {
 .content {
     padding: 20px;
     text-align: center;
-    transform: translateY(10px);
+    transform: translateY(35px);
     opacity: 1;
     transition: .5s;
 }
 
 .card:hover .content {
-    transform: translateY(0);
+    transform: translateY(20px);
     opacity: 1;
 }
 
@@ -562,6 +573,9 @@ button:hover {
     font-size: 28px;
     color: #fff;
     z-index: 1;
+	background: linear-gradient(225deg, rgb(4, 255, 254) 14.89%, rgb(42, 200, 112) 85.85%) text;
+    -webkit-text-fill-color: transparent;
+	font-weight: 600;
 }
 
 .content p {
