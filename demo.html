@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | ViWebLabs - Digital Solutions</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css"> 
+    
+    <style>
+        /* --- PAGE SPECIFIC CSS (You can move this to style.css later) --- */
+        
+        /* 1. HERO SECTION */
+        .page-header {
+            background: linear-gradient(rgba(10, 10, 10, 0.8), rgba(10, 10, 10, 0.9)), url('images/services-bg.jpg'); /* Add a bg image or keep dark */
+            background-size: cover;
+            background-position: center;
+            padding: 120px 0 80px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .page-header h1 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(90deg, #fff, #00ff88); /* Neon Green Gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .page-header p {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.2rem;
+            color: #ccc;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* 2. SERVICES GRID */
+        .services-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 16px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: #00ff88;
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.1);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            color: #00ff88;
+            margin-bottom: 25px;
+        }
+
+        .service-card h3 {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .service-card p {
+            color: #aaa;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .service-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .service-features li {
+            color: #ddd;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .service-features li i {
+            color: #00ff88;
+            font-size: 0.8rem;
+        }
+
+        /* 3. PROCESS SECTION */
+        .process-section {
+            background: #0f0f0f; /* Slightly lighter dark */
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .process-steps {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-top: 50px;
+        }
+
+        .step-item {
+            max-width: 250px;
+            text-align: center;
+        }
+
+        .step-number {
+            font-family: 'Exo 2', sans-serif;
+            font-size: 4rem;
+            font-weight: 700;
+            color: rgba(255, 255, 255, 0.05); /* Subtle background number */
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-content {
+            margin-top: -30px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .step-content h4 {
+            color: #fff;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        /* 4. CTA BANNER */
+        .cta-banner {
+            background: linear-gradient(135deg, #004d2e, #000000);
+            padding: 60px 20px;
+            text-align: center;
+            margin-top: 80px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #00ff88;
+            color: #000;
+            padding: 15px 40px;
+            font-weight: 700;
+            border-radius: 50px;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: transform 0.2s;
+        }
+
+        .cta-btn:hover {
+            transform: scale(1.05);
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body style="background-color: #050505; color: #fff; font-family: 'Inter', sans-serif; margin: 0;">
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Services That Scale</h1>
+            <p>From high-performance code to stunning design, we build digital assets that drive real business growth.</p>
+        </div>
+    </header>
+
+    <section class="services-container" id="services">
+        <div class="services-grid">
+            
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-code"></i></div>
+                <h3>Custom Web Development</h3>
+                <p>We don't just use templates. We engineer custom, high-speed web applications using modern frameworks like React and Next.js.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Single Page Applications (SPA)</li>
+                    <li><i class="fas fa-check"></i> Enterprise-Grade Security</li>
+                    <li><i class="fas fa-check"></i> API Integration & Cloud Setup</li>
+                    <li><i class="fas fa-check"></i> Mobile-First Architecture</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-layer-group"></i></div>
+                <h3>UI/UX Design</h3>
+                <p>Great software needs great design. We create intuitive, user-centric interfaces that convert visitors into loyal customers.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Wireframing & Prototyping (Figma)</li>
+                    <li><i class="fas fa-check"></i> User Journey Mapping</li>
+                    <li><i class="fas fa-check"></i> Modern, Clean Visuals</li>
+                    <li><i class="fas fa-check"></i> Interactive Design Systems</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Digital Growth & SEO</h3>
+                <p>A beautiful website is useless if no one sees it. We optimize your digital presence to rank higher and reach more clients.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> Technical SEO Optimization</li>
+                    <li><i class="fas fa-check"></i> Google Analytics & Tracking</li>
+                    <li><i class="fas fa-check"></i> Speed Performance Tuning</li>
+                    <li><i class="fas fa-check"></i> Content Strategy</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="fas fa-shield-alt"></i></div>
+                <h3>Maintenance & Support</h3>
+                <p>Focus on your business while we keep your website running. Our Annual Maintenance Contracts (AMC) ensure zero downtime.</p>
+                <ul class="service-features">
+                    <li><i class="fas fa-check"></i> 24/7 Uptime Monitoring</li>
+                    <li><i class="fas fa-check"></i> Regular Security Patches</li>
+                    <li><i class="fas fa-check"></i> Monthly Content Updates</li>
+                    <li><i class="fas fa-check"></i> Server Management</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="process-section">
+        <h2 style="font-family: 'Exo 2', sans-serif; font-size: 2.5rem; margin-bottom: 10px;">How We Work</h2>
+        <p style="color:#aaa;">A transparent, agile process designed for speed and quality.</p>
+        
+        <div class="process-steps">
+            <div class="step-item">
+                <div class="step-number">01</div>
+                <div class="step-content">
+                    <h4>Discovery</h4>
+                    <p style="font-size: 0.9rem; color:#888;">We analyze your goals, competitors, and technical requirements.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">02</div>
+                <div class="step-content">
+                    <h4>Design & Plan</h4>
+                    <p style="font-size: 0.9rem; color:#888;">We build wireframes and a roadmap before writing a single line of code.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">03</div>
+                <div class="step-content">
+                    <h4>Development</h4>
+                    <p style="font-size: 0.9rem; color:#888;">Our developers build your solution using clean, scalable code.</p>
+                </div>
+            </div>
+            <div class="step-item">
+                <div class="step-number">04</div>
+                <div class="step-content">
+                    <h4>Launch & Grow</h4>
+                    <p style="font-size: 0.9rem; color:#888;">We deploy your site and provide ongoing support for growth.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-banner">
+        <h2 style="font-family: 'Exo 2', sans-serif; margin-bottom: 10px;">Ready to Transform Your Digital Presence?</h2>
+        <p style="color: #ddd;">Let's build something extraordinary together.</p>
+        <a href="contact.html" class="cta-btn">Start Your Project</a>
+    </section>
+
+    </body>
+</html>
