@@ -889,7 +889,7 @@ button:hover {
 		padding: 20px;
 		border-radius: 15px;
 		background: #ffffff0d;
-		backdrop-filter: blur(5px);
+		backdrop-filter: blur(20px);
 		/* position: relative; */
 	}
 }	
@@ -968,4 +968,15 @@ button:hover {
 .contact-card:hover .icon-box {
     background: #00ff88; /* Icon circle fills with green */
     color: #000; /* Icon turns black for contrast */
+}
+
+.right-0{
+	right:0;
+}
+.z-index{
+	z-index: 0;
+}
+.earth.earth-contact{
+	right: -145px;
+
 }
