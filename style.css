@@ -121,7 +121,7 @@ header {
     margin: auto;
     border-radius: 50px;
     top: 10px;
-
+	z-index: 999;
 }
 
 .nav-item.active {
@@ -880,3 +880,92 @@ button:hover {
 
 	}
 /* testi end */
+
+
+
+/* conatct page */
+.contact-us{
+	.contact-page-form{
+		padding: 20px;
+		border-radius: 15px;
+		background: #ffffff0d;
+		backdrop-filter: blur(5px);
+		/* position: relative; */
+	}
+}	
+.location-quote{
+		font-size: 2rem;
+		background: linear-gradient(225deg, #04fffe 14.89%, #2ac870 85.85%);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		text-align: justify;
+}
+
+
+
+/* GRID LAYOUT: Puts cards side-by-side on PC, stacked on Mobile */
+.footer-contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Auto-responsive */
+    gap: 15px;
+    margin-top: 20px;
+}
+
+/* THE CARD STYLE */
+.contact-card {
+    background: rgba(255, 255, 255, 0.03); /* Very transparent dark bg */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Thin subtle border */
+    padding: 15px;
+    border-radius: 12px; /* Smooth rounded corners */
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+    transition: all 0.3s ease; /* Smooth animation */
+	cursor: pointer;
+}
+
+/* TEXT STYLING */
+.card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text strong {
+    color: #fff;
+    font-family: 'Exo 2', sans-serif; /* Your Headings Font */
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.card-text span {
+    color: #aaa; /* Lighter text for details */
+    font-size: 0.85rem;
+    font-family: 'Inter', sans-serif;
+}
+
+/* ICON BOX STYLING */
+.icon-box {
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 255, 136, 0.1); /* Faint Green Background */
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #00ff88; /* Neon Green Icon */
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+/* --- HOVER EFFECTS (The Magic) --- */
+.contact-card:hover {
+    background: rgba(255, 255, 255, 0.08); /* Slightly lighter on hover */
+    border-color: #00ff88; /* Border turns Neon Green */
+    transform: translateY(-3px); /* Moves up slightly */
+    box-shadow: 0 5px 15px rgba(0, 255, 136, 0.15); /* Green Glow below */
+}
+
+.contact-card:hover .icon-box {
+    background: #00ff88; /* Icon circle fills with green */
+    color: #000; /* Icon turns black for contrast */
+}
