@@ -241,16 +241,16 @@ particlesJS("particles-js", {
 
 // disbale code copy
 
-  document.addEventListener('contextmenu', event => event.preventDefault());
+  // document.addEventListener('contextmenu', event => event.preventDefault());
 
-  document.onkeydown = function(e) {
-    // Disable F12, Ctrl+U, Ctrl+Shift+I, Ctrl+Shift+J
-    if (
-      e.keyCode == 123 ||
-      (e.ctrlKey && e.keyCode == 85) ||
-      (e.ctrlKey && e.shiftKey && e.keyCode == 73) ||
-      (e.ctrlKey && e.shiftKey && e.keyCode == 74)
-    ) {
-      return false;
-    }
-  };
+  // document.onkeydown = function(e) {
+  //   // Disable F12, Ctrl+U, Ctrl+Shift+I, Ctrl+Shift+J
+  //   if (
+  //     e.keyCode == 123 ||
+  //     (e.ctrlKey && e.keyCode == 85) ||
+  //     (e.ctrlKey && e.shiftKey && e.keyCode == 73) ||
+  //     (e.ctrlKey && e.shiftKey && e.keyCode == 74)
+  //   ) {
+  //     return false;
+  //   }
+  // };

@@ -1438,3 +1438,340 @@ button:hover {
     font-weight: 600;
 }
 /* tech stack css end */
+
+
+/* about us */
+/* =========================================
+   ABOUT PAGE RE-DESIGN (Dark Tech Theme)
+   ========================================= */
+
+
+  
+/* --- 1. Global Utilities for this page --- */
+.section-padding { padding: 100px 0; }
+.text-center { text-align: center; }
+.relative-z { position: relative; z-index: 2; }
+.neon-subtitle {
+    color: #00ff88;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* --- 2. Hero Section --- */
+.page-header {
+    padding: 50px 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-title {
+    /* font-family: 'Orbitron', sans-serif; */
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.neon-text {
+    color: #00ff88;
+    text-shadow: 0 0 15px rgba(0, 255, 136, 0.5);
+}
+.hero-desc {
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+/* --- 3. Feature Grid (Overlapping) --- */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: -30px; /* Overlap Effect */
+    position: relative;
+    z-index: 5;
+}
+
+.feature-card {
+    background: #111; /* Dark background */
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    transition: all 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    border-bottom-color: #00ff88; /* Neon bottom border */
+    box-shadow: 0 15px 40px rgba(0, 255, 136, 0.1);
+}
+
+.feature-card .icon-box {
+    font-size: 2.5rem;
+    color: #00ff88;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #ffffffeb;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.feature-card p {
+    font-family: 'Montserrat', sans-serif;
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* --- 4. Vision/Mission Grid --- */
+.vision-section {
+    margin: 80px 0;
+   
+    background: linear-gradient(135deg, #3c4b4b, #111);
+    position: relative;
+    margin-bottom: 0;
+}
+.vision-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 255, 136, 0.072) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 136, 0.088) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.vm-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+
+}
+.vm-card {
+    background: rgba(255,255,255,0.02);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: all 0.5s;
+     background: #111;
+    /* border-color: #00ff88; */
+    transform: translateY(-5px);
+    border-bottom: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+.vm-card:hover {
+    background: #000000a4;
+    /* border-color: #00ff88; */
+    transform: translateY(-5px);
+    border-bottom: 1px solid #00ff88;
+    border-left: 1px solid #00ff88;
+    transition: all 0.5s;
+}
+.vm-card .box-icon {
+    font-size: 2rem;
+    color: #fff;
+    opacity: 0.5;
+    margin-bottom: 20px;
+    transition: all 0.5s;
+}
+.vm-card:hover .box-icon {
+    color: #00ff88;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.vm-card h3 {
+    font-family: 'Orbitron', sans-serif;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+        transition: all 0.5s;
+}
+.vm-card:hover h3{
+    color: #00ff88;
+        transition: all 0.5s;
+}
+.vm-card p {
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* --- 5. Why Choose Us (Split) --- */
+.choose-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+.section-heading {
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-size: 2.2rem; */
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.section-desc {
+    font-family: 'Montserrat', sans-serif;
+    color: #e1e0e0;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+.choose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.choose-item {
+    background: rgb(0 0 0 / 56%);
+    padding: 25px;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.05);
+    transition: 0.3s;
+}
+.choose-item:hover {
+    border-color: #00ff88;
+}
+.choose-item i {
+    color: #00ff88;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    background: rgba(0, 255, 136, 0.1);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.choose-item h4 {
+    color: #fff;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-size: 1rem;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.btn-consult{
+    border-radius: 50px !important;
+    font-family: 'Montserrat', sans-serif;
+     font-family: 'Montserrat', sans-serif !important;
+        text-transform: uppercase !important;
+}
+.choose-item p {
+    color: #d5d4d4;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+/* --- 6. Process Section --- */
+.process-bg {
+    background: #080808;
+}
+.process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+.step-card {
+    background: #050505;
+    padding: 40px 20px;
+    border: 1px solid #00ff8849;
+    border-radius: 8px;
+}
+.step-number {
+    display: inline-block;
+    width: 50px; height: 50px; line-height: 50px;
+    background: #00ff88;
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 136, 0.4);
+}
+.step-card h3 {
+    color: #fff;
+    /* font-family: 'Orbitron', sans-serif; */
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.step-card p {
+    color: #aaa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* --- 7. CTA Section --- */
+.cta-section {
+    margin: 100px 0;
+    /* background: linear-gradient(135deg, #3c4b4b, #111); */
+    /* border-top: 1px solid #00ff88; */
+    text-align: center;
+    position: relative;
+     background: linear-gradient(135deg, #004d2e, #000000);
+}
+.cta-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(rgba(0, 255, 136, 0.072) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 255, 136, 0.088) 1px, transparent 1px);
+    background-size: 40px 40px;
+    opacity: 0.5;
+    pointer-events: none;
+}
+.cta-title {
+    /* font-family: 'Orbitron', sans-serif; */
+    /* font-size: 2.5rem; */
+    color: #fff;
+    margin-bottom: 15px;
+       
+}
+.cta-text {
+    font-family: 'Montserrat', sans-serif;
+    color: #ccc;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+.btn-primary {
+    display: inline-block;
+    padding: 15px 40px;
+    background: #00ff88;
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.btn-primary:hover {
+    background: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(0, 255, 136, 0.4);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .choose-wrapper { grid-template-columns: 1fr; }
+    .hero-title { font-size: 2rem; }
+    .features-grid { margin-top: 20px; } /* Remove overlap on mobile */
+    .page-header { padding: 120px 0 50px; }
+}
+/* about section end */
