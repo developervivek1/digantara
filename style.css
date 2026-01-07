@@ -511,6 +511,7 @@ button:hover {
         background: linear-gradient(rgba(255, 0, 0, 0.853), rgba(255, 0, 255, 0.756));
         clip-path: circle(30% at right 70%);
         clip-path: circle(30% at 40% 41%);
+        opacity: 0.5;
 }
 
 .service-body::after {
@@ -534,6 +535,7 @@ button:hover {
         background: linear-gradient(#2196f3, #e91e63);
         clip-path: circle(20% at 10% 10%);
         clip-path: circle(40% at 26% 45%);
+        opacity: 0.5;
 }
 
 .container-service{
@@ -1372,3 +1374,67 @@ button:hover {
 	}
 
 }
+
+/* tech stack section css start */
+/* --- TECH STACK SECTION (Updated) --- */
+
+.tech-stack-section {
+    padding: 80px 0;
+    background: #0d0d0d61; /* Slightly different dark shade to separate sections */
+    text-align: center;
+}
+
+.tech-title {
+    /* font-family: 'Orbitron', sans-serif; */
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.tech-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    color: #888;
+    font-size: 1rem;
+    margin-bottom: 50px;
+}
+
+.tech-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px; /* Space between items */
+    align-items: center;
+}
+
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.3s ease;
+    width: 100px; /* Fixed width for alignment */
+}
+
+.tech-item:hover {
+    transform: translateY(-5px); /* Float up on hover */
+}
+
+.tech-item i {
+    font-size: 3.5rem; /* Icon Size */
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.1)); /* Subtle glow */
+    transition: all 0.3s ease;
+}
+
+.tech-item:hover i {
+    filter: drop-shadow(0 0 15px currentColor); /* Glows with the icon's own color */
+}
+
+.tech-item span {
+    font-family: 'Montserrat', sans-serif;
+    color: #aaa;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+/* tech stack css end */
