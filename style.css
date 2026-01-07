@@ -222,9 +222,11 @@ header {
 .our-services {
 	button{
 		height: 42px;
-		width: 120px;
-		font-size: 16px;
-		font-weight: 500;
+        /* width: 141px; */
+        font-size: 16px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 0px 15px;
 	}
 }
 
@@ -273,7 +275,7 @@ header {
 
 
 /* button style */
-button, .contact-us button {
+button{
 	-webkit-appearance: none;
 	background: -webkit-gradient(to right, #a2ccb6 0%, #fceeb5 50%, green 100%);
 	background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, green 100%);
@@ -294,7 +296,7 @@ button, .contact-us button {
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-	width: 10rem;
+	/* width: 10rem; */
 	font-weight: 600;
 	transition: all 0.5s;
 }
@@ -1221,7 +1223,7 @@ button:hover {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
-    padding: 18px 45px;
+    padding: 18px 25px;
     border-radius: 4px; /* Slight rounded, tech feel */
     text-decoration: none;
     font-size: 1rem;
