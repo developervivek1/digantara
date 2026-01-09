@@ -29,8 +29,8 @@
 </div>
 
 	<header class="container">
-		<div class="container-fluid">
-			<div class="container py-2">
+		<div>
+			<div class="py-2">
 
 				<nav class="navbar navbar-expand-md  navbar-dark p-0">
 					<!-- <a class="navbar-brand font-weight-bold" href="./">Vivek Pathak</a> -->
@@ -68,62 +68,91 @@
 
 
 
-	<section>
+	<main>
 		<div class="container-flex container-myfluid pt-3">
 
-
-			<div id="particles-js"></div>
-
-
-			<div class="moving-star fill-screen">
-				<span class="tail-star"></span>
-				<span class="tail-star"></span>
-			</div>
-
-
-			<div class="moving-star2 fill-screen2">
-				<span class="tail-star2"></span>
-				<span class="tail-star2"></span>
-			</div>
-
-
-
-			<div class="container text-white">
-
-				<div class="row pt-0 pt-md-5 pb-md-5 pb-0">
-					<div class="col-md-7 font-weight-bold pt-0 pt-md-5">
-						<div>
-							<div class="earth2"></div>
-						</div>
-						<h1 class="font-weight-bold display-4 text-capitalize">Welcome to <br> 
-							<img src="./images/viweblabstext.png" class="img-fluid w-50 welcome-text" alt="logo">
-						</h1>
-						<p class="pt-4 ">Building Digital Experiences That Drive Growth
-							<br>
-							At ViWebLabs, we craft modern, responsive, and high‑impact digital solutions — from stunning websites to powerful digital platforms that help businesses grow online. Whether you’re a startup, SME, or enterprise, we deliver tailored tech solutions that perform.</p>
-
-
-						<button type="button" class="mt-3 cta-btn" onclick="window.location.href='./about.html'">Explore</button>
-						<a class="link-tag" href="./contact.html">Get In Touch <span><i class="fas fa-arrow-right"></i></span></a>
-
-					</div>
-					<div class="col-md-5">
-
-						<!-- <img src="images/earth.png" alt="" class="img-fluid img1">
-		 -->
-
-						<div class="earth"></div>
-					</div>
-
+			<div class="position-relative">
+				<div id="particles-js"></div>
+				<div class="moving-star fill-screen">
+					<span class="tail-star"></span>
+					<span class="tail-star"></span>
 				</div>
-				<div id="about" class="pt-5">
-					<div class="row mt-5 pt-5 pb-5 mb-5">
-						<div class="col-md-6 pt-5">
-							<h6 class="text-white">About US</h6>
-							<h1 class="display-4 font-weight-bold">Who Are We ? </h1>
+				<div class="moving-star2 fill-screen2">
+					<span class="tail-star2"></span>
+					<span class="tail-star2"></span>
+				</div>
+				<div class="container text-white hero-section">
+					<div class="row pt-0 pb-0 w-100">
+						<div class="col-md-7 font-weight-bold pt-0">
+							<div>
+								<div class="earth2"></div>
+							</div>
+							<h1 class="font-weight-bold display-4 text-capitalize">Welcome to <br> 
+								<img src="./images/viweblabstext.png" class="img-fluid w-50 welcome-text" alt="logo">
+							</h1>
+							<div class="hero-contents">
+								<p class="pt-4">Building Digital Experiences That Drive Growth
+								<br>
+								At ViWebLabs, we craft modern, responsive, and high‑impact digital solutions — from stunning websites to powerful digital platforms that help businesses grow online. Whether you’re a startup, SME, or enterprise, we deliver tailored tech solutions that perform.</p>
 
+
+								<button type="button" class="mt-3 cta-btn" onclick="window.location.href='./about.html'">Explore</button>
+								<a class="link-tag" href="./contact.html">Get In Touch <span><i class="fas fa-arrow-right"></i></span></a>
+
+							</div>
 						</div>
-						<div class="col-md-6 pt-5">
+						<div class="col-md-5">
+
+							<!-- <img src="images/earth.png" alt="" class="img-fluid img1">
+			-->
+
+							<div class="earth"></div>
+						</div>
+
+					</div>
+				</div>	
+			</div>
+			
+			<section class="about-us">
+				<div id="about" class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="h-100 d-flex flex-wrap ">
+								<div>
+									<h6 class="text-white">About US</h6>
+									<h1 class="display-4 font-weight-bold">Who Are We ? </h1>
+								</div>
+
+								<div class="choose-grid">
+    
+									<div class="choose-item">
+										<i class="fas fa-network-wired"></i>
+										<h4>100% Distributed</h4>
+										<p>We operate as a borderless cloud team, serving clients globally without geographical limits.</p>
+									</div>
+
+									<div class="choose-item">
+										<i class="fas fa-clock"></i>
+										<h4>24/7 Architecture</h4>
+										<p>Our systems and support remain active round-the-clock. Your business never sleeps, neither do we.</p>
+									</div>
+
+									<div class="choose-item">
+										<i class="fas fa-server"></i>
+										<h4>Zero Overhead</h4>
+										<p>No fancy offices. No hidden fees. You pay for top-tier code and premium talent, not our rent.</p>
+									</div>
+
+									<div class="choose-item">
+										<i class="fas fa-rocket"></i>
+										<h4>Rapid Deployment</h4>
+										<p>We skip the corporate bureaucracy to build, test, and launch your high-performance product fast.</p>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 text-white">
 							<p>At ViWebLabs, we are a creative digital studio driven by innovation, technology, and results. We specialize in designing and developing modern digital solutions that help businesses establish a strong online presence and scale with confidence.
 
 									</p>		<p>	
@@ -136,20 +165,16 @@
 								We don’t just build websites — we build digital foundations for growth. 🚀</p>
 								<button type="button" class="mt-4 cta-btn" onclick="window.location.href='./about.html'">Read More</button>
 								<a class="link-tag" href="./contact.html">Get In Touch <span><i class="fas fa-arrow-right"></i></span></a>
-
 						</div>
 					</div>
 				</div>
-
-			</div>	
-				<!-- our services -->
-
-				 <section id="services" class="our-services position-relative">
+			</section>
+			<!-- our services -->
+			<section id="services" class="our-services position-relative">
 					<div class="service-body d-block">
 					<h6 class="text-white text-center">Our Services</h6>
 					<h1 class="display-4 font-weight-bold text-white text-center pb-5">What we can offer</h1>
   					 <div class="container-service">
-						
 						<div class="card">
 							<div class="content">
 								<h2>01</h2>
@@ -185,10 +210,10 @@
     				</div>
 					</div>
 					
-				 </section>
-				<!-- our services end -->
-				 <div class="container pb-5 text-white">
-				<div id="products" class="row mb-5 pb-5 fact-about-us">
+			</section>
+			<!-- our services end -->
+			<div class="container  text-white">
+				<div id="products" class="row mb-5 fact-about-us">
 					<div class="col-md-6 pt-5">
 						<img src="images/fact-video.gif" alt="fact-about-us" loading="lazy" class="fact-about-us-img img-fluid">
 					</div>
@@ -223,7 +248,7 @@
 
 				</div>
 				<!-- our work section start -->
-				<div id="Portfolio" class="row mt-5 pt-5 pb-5 mb-5">
+				<div id="Portfolio" class="row pb-5 mb-5">
 
 					<div class="col-md-6 pt-5">
 						<h6 class="text-white">Our Work</h6>
@@ -275,7 +300,7 @@
 
 
 				<!-- testi start -->
-				  <section class="testimonial mt-5 pt-5 pb-5 mb-5">
+				  <section class="testimonial mt-5 pb-5">
 					<div class="pb-5">
 						<h6 class="text-white">Customer Feedback</h6>
 						<h1 class="display-4 font-weight-bold">Testimonial</h1>
@@ -355,8 +380,8 @@
 					</div>
 				</section>
 				<!-- testi end -->
-				<div id="contact" class="row mt-5 pt-5 pb-5 mb-5 contact-us">
-					<div class="col-md-6 pt-5">
+				<div id="contact" class="row pb-5  contact-us">
+					<div class="col-md-6 pt-5 pb-5">
 						<h6 class="text-white">We typically respond within 15 minutes</h6>
 						<h1 class="display-4 font-weight-bold">Contact Us ! </h1>
 						<!-- <h6></h6>
@@ -369,7 +394,7 @@
 						</div>
 
 					</div>
-					<div class="col-md-6 pt-5">
+					<div class="col-md-6 pt-5 pb-5">
 						<form id="contactForm" method="POST" name="contact" netlify>
 							<div class="row pt-3">
 								<div class="col-md-6">
@@ -406,13 +431,21 @@
 				</div>
 			</div>
 		</div>
-		</div>
-	</section>
-	<section class="pb-5 pt-0 text-center">
-		<h1 class="display-1 fw-bold d-none d-md-block text-light mt-5"><img src="./images/viweb-logo.png" class="img-fluid w-50 viweblabs-big-logo" alt="viweblabs-logo"></h1>
-		<!-- <h1 class="display-5 py-4 text-center opacity-50 fw-bold d-block d-md-none text-light mt-5">VIVEK PATHAK</h1> -->
 
-	</section>
+		<section class="section-padding cta-section mt-0">
+			<div class="container">
+				<h2 class="cta-title display-4 ">Ready to Build Your Dream Project?</h2>
+				<p class="cta-text">Need expert advice for your next website? Let us help you create a winning platform that boosts engagement, drives traffic, and converts visitors.</p>
+				<a href="contact.html" class="btn-primary btn-consult text-dark">Contact Us Today</a>
+			</div>
+		</section>
+		
+		<section class="pb-5 pt-0 text-center">
+			<h1 class="display-1 fw-bold d-none d-md-block text-light mt-5"><img src="./images/viweb-logo.png" class="img-fluid w-50 viweblabs-big-logo" alt="viweblabs-logo"></h1>
+			<!-- <h1 class="display-5 py-4 text-center opacity-50 fw-bold d-block d-md-none text-light mt-5">VIVEK PATHAK</h1> -->
+
+		</section>
+	</main>
 	<footer class="bg-dark">
 		<div id="news" class="container-fluid bg-dark">
 			<div class="container pt-5">
